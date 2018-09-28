@@ -1,0 +1,6 @@
+{
+    "name": "Apprentice Chrome Extension",
+    "version": "0.1",
+    "description": "A chrome extension that enables someone to train an apprentice API agent to interact with web through the users browser.",
+    "manifest_version": 2
+}
