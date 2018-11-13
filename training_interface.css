@@ -1,0 +1,127 @@
+/*
+html, body {
+    height: 100%;
+    width: 300px;
+    margin: 0;
+}
+*/
+
+#originalBody {
+    margin-right: 300px;
+}
+
+#apprenticeControl {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    background-color: white;
+    box-shadow: 0px 0px 5px #0000009e;
+}
+
+.hasOutline {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #BBBBBB;
+}
+
+#sidePanel {
+    flex: 1;
+    height: 100%;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#sidePanel h4 {
+    color: #2e2e2e;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+#serverMessages {
+    flex: 2;
+    overflow: auto;
+    padding: 0;
+    font-size: 14px;
+    min-height: 100px;
+}
+
+#serverMessages p {
+    margin: 0px;
+    padding: 1.5px 3px 1.5px 3px;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#chatmessageDiv {
+    width: 100%;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+#chatBox {
+    height: 25px;
+    font-size: 15px;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+#chatMessageButton {
+    font-size: 15px;
+    height: 31px;
+    width: 84px;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+#holdButtons {
+    flex: 1;
+    min-height: 120px;
+    overflow: auto;
+    padding: 3px 3px;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.receivedButton {
+    height: 25px;
+    text-align: center;
+    font-size: 15px;
+}

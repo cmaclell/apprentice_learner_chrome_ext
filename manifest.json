@@ -2,5 +2,48 @@
     "name": "Apprentice Chrome Extension",
     "version": "0.1",
     "description": "A chrome extension that enables someone to train an apprentice API agent to interact with web through the users browser.",
+    "permissions": ["tabs", "activeTab", "<all_urls>", "storage"],
+    "content_scripts": [{
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "js": ["lib/domJSON.min.js", "lib/jquery-3.3.1.min.js", "lib/jquery-ui.min.js", "apprentice.js"],
+        "run_at": "document_end"
+    }],
+    "options_page": "options.html",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "web_accessible_resources": [
+        "training_interface.html",
+        "training_interface.css",
+        "training_interface.js",
+        "lib/jquery-ui.min.css",
+        "lib/jquery-ui.theme.min.css",
+        "lib/images/ui-icons_444444_256x240.png",
+        "lib/images/ui-icons_555555_256x240.png",
+        "lib/images/ui-icons_777620_256x240.png",
+        "lib/images/ui-icons_777777_256x240.png",
+        "lib/images/ui-icons_cc0000_256x240.png",
+        "lib/images/ui-icons_ffffff_256x240.png"
+    ],
+    "browser_action": {
+        // "default_popup": "training_interface.html",
+        "default_title": "Apprentice Chrome Ext.",
+        "default_icon": {
+            "16": "images/get_started16.png",
+            "32": "images/get_started32.png",
+            "48": "images/get_started48.png",
+            "128": "images/get_started128.png"
+        }
+    },
+    "icons": {
+        "16": "images/get_started16.png",
+        "32": "images/get_started32.png",
+        "48": "images/get_started48.png",
+        "128": "images/get_started128.png"
+    },
     "manifest_version": 2
 }
